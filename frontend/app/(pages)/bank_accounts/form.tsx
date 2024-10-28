@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Button, Flex, Text, TextField, Dialog } from "@radix-ui/themes";
-import { useFormBankAccount } from "@/hooks/use-form-bank-account";
+import { useFormBankAccount } from "@/hooks/use_form_bank_account";
 import { BankAccountFormData } from "@/types/bank_account";
 import { useDeleteBankAccount } from "@/apis/bank_accounts/mutation";
 

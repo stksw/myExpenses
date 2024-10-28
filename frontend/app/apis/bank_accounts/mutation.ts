@@ -1,6 +1,6 @@
 import { useBankAccountCache } from "@/(pages)/bank_accounts/cache";
 import { useMutation } from "@tanstack/react-query";
-import { BankAccountApi } from "./function";
+import { BankAccountApi } from "./api_function";
 import { BankAccountFormData } from "@/types/bank_account";
 
 export const usePostBankAccount = () => {

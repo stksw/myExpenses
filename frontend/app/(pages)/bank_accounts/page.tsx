@@ -10,7 +10,7 @@ import {
   Button,
 } from "@radix-ui/themes";
 import { Settings } from "lucide-react";
-import { BankAccountApi } from "@/apis/bank_accounts/function";
+import { BankAccountApi } from "@/apis/bank_accounts/api_function";
 import {
   BankAccount,
   BankAccountFormData,

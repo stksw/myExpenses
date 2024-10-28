@@ -8,7 +8,7 @@ import {
   Dialog,
   Select,
 } from "@radix-ui/themes";
-import { useFormAccountTransaction } from "@/hooks/use-form-account-transaction";
+import { useFormAccountTransaction } from "@/hooks/use_form_account_transaction";
 import { useDeleteAccountTransaction } from "@/apis/account_transactions/mutation";
 import { AccountTransactionFormData } from "@/types/account_transaction";
 
