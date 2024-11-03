@@ -20,8 +20,8 @@ class AccountTransaction < ApplicationRecord
     end
 
     spreadsheet = Roo::Spreadsheet.open(file.path)
-
     header = spreadsheet.row(1)
+
     (2..spreadsheet.last_row).map do |i|
       row = Hash[[header, spreadsheet.row(i)].transpose]
   

@@ -2,7 +2,8 @@ class AccountTransactionImportsController < ActionController::API
   
   def create
     begin
-      success_count, error = AccountTransaction.import(account_transaction_import_params[:file])
+      success_count, error = AccountTransaction.import(params[:file])
+
       if error.present?
         render json: { message: error }, status: :unprocessable_entity
         return
@@ -14,11 +15,4 @@ class AccountTransactionImportsController < ActionController::API
       return
     end
   end
-
-  private
-
-    def account_transaction_import_params
-      params.require(:account_transaction_import).permit(:file)
-    end
-
 end
