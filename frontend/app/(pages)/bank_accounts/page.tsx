@@ -76,7 +76,7 @@ const BankAccountsPage = () => {
                     <Table.Cell>{ba.account_type}</Table.Cell>
                     <Table.Cell>{ba.account_number}</Table.Cell>
                     <Table.Cell>{ba.account_holder}</Table.Cell>
-                    <Table.Cell> -- </Table.Cell>
+                    <Table.Cell>¥{ba.balance}</Table.Cell>
                     <Table.Cell>
                       <Dialog.Trigger>
                         <Settings

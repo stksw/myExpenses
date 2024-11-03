@@ -5,6 +5,7 @@ export type BankAccount = {
   account_type: string;
   account_number: string;
   account_holder: string;
+  balance: number;
   created_at: Date;
   updated_at: Date;
 };
