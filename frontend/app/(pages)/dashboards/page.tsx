@@ -3,6 +3,7 @@
 import { Container, Table, Text } from "@radix-ui/themes";
 import { useQuery } from "@tanstack/react-query";
 import { DashboardsApi } from "@/apis/dashboards/api_functions";
+import { DashboardChart } from "@/components/dashboard_chart";
 
 const DashboardsPage = () => {
 
@@ -11,8 +12,11 @@ const DashboardsPage = () => {
     queryFn: () => DashboardsApi.list(),
   });
 
+
   return (
     <Container size="4">
+      <DashboardChart apiData={res?.data} />
+
       <Table.Root>
         <Table.Header>
           <Table.Row>
